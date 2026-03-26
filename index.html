@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملخص الشامل والكامل: ثنائي القطب RC | منصة نوفل</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --main-color: #0f766e; /* أخضر مزرق داكن يعطي طابع علمي */
+            --secondary-color: #0d9488;
+            --accent-color: #f59e0b; /* أصفر/برتقالي للتنبيهات */
+            --bg-color: #f0fdfa;
+            --table-border: #ccfbf1;
+            --text-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #e2e8f0;
+            margin: 0;
+            padding: 20px;
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-radius: 12px;
+            border-top: 8px solid var(--main-color);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px dashed var(--main-color);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            font-family: 'Cairo', sans-serif;
+            color: var(--main-color);
+            font-size: 2.4rem;
+            margin-bottom: 5px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            background: var(--bg-color);
+            padding: 10px 20px;
+            border-radius: 8px;
+            border-right: 6px solid var(--accent-color);
+            margin: 40px 0 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .section-title h2 {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            color: var(--main-color);
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        .num-badge {
+            background: var(--accent-color);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .content-box {
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background: #ffffff;
+        }
+
+        .math-box {
+            background: #f8fafc;
+            padding: 15px;
+            border-left: 4px solid var(--secondary-color);
+            margin: 15px 0;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 1.15rem;
+            direction: ltr;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: var(--main-color);
+            color: white;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .col-charge { background-color: #f0fdf4; }
+        .col-discharge { background-color: #fef2f2; }
+        
+        ul { padding-right: 20px; }
+        li { margin-bottom: 8px; }
+
+        .highlight {
+            color: #d97706;
+            font-weight: bold;
+        }
+
+        .q-and-a {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .q-and-a h4 { margin: 0 0 10px 0; color: #b45309; font-family: 'Cairo', sans-serif; }
+
+        .btn-print {
+            display: block;
+            width: 250px;
+            margin: 40px auto 0;
+            padding: 15px;
+            background: var(--main-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-family: 'Cairo', sans-serif;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(15, 118, 110, 0.2);
+            transition: 0.3s;
+        }
+
+        .btn-print:hover { background: #115e59; }
+
+        @media print {
+            .btn-print { display: none; }
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; border: none; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>الدليل الشامل والكامل: ثنائي القطب RC</h1>
+        <p style="font-size: 1.1rem; color: #64748b;">منصة نوفل - إعداد وتلخيص مفصل وفق المنهجية الوزارية (بكالوريا 2026)</p>
+    </header>
+
+    <div class="section-title">
+        <div class="num-badge">1</div>
+        <h2>التعريفات والمفاهيم الأساسية</h2>
+    </div>
+    <div class="content-box">
+        <ul>
+            <li><span class="highlight">التوتر الكهربائي (U):</span> هو فرق الكمون بين نقطتين، وهو مقدار الطاقة اللازمة لنقل الإلكترونات. وحدته الفولط (V).</li>
+            <li><span class="highlight">التيار الكهربائي (i):</span> هو انتقال الإلكترونات من القطب السالب إلى الموجب (الجهة الاصطلاحية للتيار العكس: من الموجب للسالب). يعبر عن سرعة تدفق الشحنات: \( i = \frac{dq}{dt} \). وحدته الأمبير (A).</li>
+            <li><span class="highlight">الشحنة الكهربائية (q):</span> مقدار يمثل عدد الإلكترونات المتراكمة \( q = n \cdot e \). وحدتها الكولوم (C).</li>
+            <li><span class="highlight">المكثفة (C):</span> عنصر كهربائي يتكون من لبوسين ناقلين يفصل بينهما عازل استقطابي. قادرة على تخزين الطاقة الكهربائية. سعتها \( C \) تقاس بالفراد (F).</li>
+            <li><span class="highlight">التفسير المجهري لعملية الشحن:</span> عند غلق القاطعة، المولد يضخ الإلكترونات من قطبه السالب نحو اللبوس (A) فيشحن سلباً \(-q\). وبفعل التنافر، تغادر الإلكترونات اللبوس (B) نحو القطب الموجب للمولد فيشحن إيجاباً \(+q\). يتوقف التيار عندما يصبح توتر المكثفة مساوياً لتوتر المولد (\(u_C = E\)).</li>
+        </ul>
+    </div>
+
+    <div class="section-title">
+        <div class="num-badge">2</div>
+        <h2>القوانين الأساسية، أجهزة القياس، وتجميع المكثفات</h2>
+    </div>
+    <div class="content-box">
+        <table style="margin-bottom: 20px;">
+            <tr>
+                <th>قانون أوم (للناقل الأومي)</th>
+                <th>قانون شحنة المكثفة</th>
+                <th>العلاقة بين التيار والتوتر للمكثفة</th>
+            </tr>
+            <tr>
+                <td dir="ltr">\( u_R(t) = R \cdot i(t) \)</td>
+                <td dir="ltr">\( q(t) = C \cdot u_C(t) \)</td>
+                <td dir="ltr">\( i(t) = C \frac{du_C}{dt} \)</td>
+            </tr>
+        </table>
+
+        <h3>كيفية تجميع (ربط) المكثفات (عكس المقاومات):</h3>
+        <ul>
+            <li><strong>على التفرع (التوازي):</strong> السعة المكافئة \( C_{eq} = C_1 + C_2 \). <br><span style="color: green;">الفائدة:</span> الحصول على مكثفة سعتها أكبر، وتخزين طاقة أكبر.</li>
+            <li><strong>على التسلسل (التوالي):</strong> المقلوب \( \frac{1}{C_{eq}} = \frac{1}{C_1} + \frac{1}{C_2} \). <br><span style="color: green;">الفائدة:</span> الحصول على سعة أصغر، وتحمل توترات عالية (حماية المكثفات من التلف).</li>
+        </ul>
+
+        <h3>ربط راسم الاهتزاز المهبطي:</h3>
+        <p>لمشاهدة التوترين \(u_C\) و \(u_R\) في آن واحد: نضع <strong>المأخذ الأرضي بين المكثفة والمقاومة</strong>. نربط المدخل \(Y_1\) في الطرف الآخر للمكثفة، والمدخل \(Y_2\) في الطرف الآخر للمقاومة. <br>
+        <em>ملاحظة:</em> إذا كان سهم التوتر المطلوب مشاهدته يشير نحو المأخذ الأرضي (معاكس)، يجب الضغط على الزر <strong>INV</strong> لعكس البيان ليظهر في الجهة الموجبة.</p>
+    </div>
+
+    
+
+    <div class="section-title">
+        <div class="num-badge">3</div>
+        <h2>المعادلات التفاضلية الشاملة (شحن وتفريغ)</h2>
+    </div>
+    <div class="content-box">
+        <p>حسب قانون جمع التوترات: في الشحن \( u_R + u_C = E \)، وفي التفريغ \( u_R + u_C = 0 \).</p>
+        <table>
+            <tr>
+                <th>المقدار</th>
+                <th class="col-charge">حالة الشحن (قاطعة مغلقة)</th>
+                <th class="col-discharge">حالة التفريغ (قاطعة مفتوحة)</th>
+            </tr>
+            <tr>
+                <td><strong>التوتر \( u_C(t) \)</strong></td>
+                <td class="col-charge" dir="ltr">
+                    \( RC \frac{du_C}{dt} + u_C = E \) <br>
+                    <strong>الحل:</strong> \( u_C(t) = E(1 - e^{-t/\tau}) \)
+                </td>
+                <td class="col-discharge" dir="ltr">
+                    \( RC \frac{du_C}{dt} + u_C = 0 \) <br>
+                    <strong>الحل:</strong> \( u_C(t) = E \cdot e^{-t/\tau} \)
+                </td>
+            </tr>
+            <tr>
+                <td><strong>الشحنة \( q(t) \)</strong></td>
+                <td class="col-charge" dir="ltr">
+                    \( RC \frac{dq}{dt} + q = C \cdot E \) <br>
+                    <strong>الحل:</strong> \( q(t) = Q_{max}(1 - e^{-t/\tau}) \)
+                </td>
+                <td class="col-discharge" dir="ltr">
+                    \( RC \frac{dq}{dt} + q = 0 \) <br>
+                    <strong>الحل:</strong> \( q(t) = Q_{max} \cdot e^{-t/\tau} \)
+                </td>
+            </tr>
+            <tr>
+                <td><strong>التيار \( i(t) \)</strong></td>
+                <td class="col-charge" dir="ltr">
+                    \( RC \frac{di}{dt} + i = 0 \) <br>
+                    <strong>الحل:</strong> \( i(t) = I_0 \cdot e^{-t/\tau} \)
+                </td>
+                <td class="col-discharge" dir="ltr">
+                    \( RC \frac{di}{dt} + i = 0 \) <br>
+                    <strong>الحل:</strong> \( i(t) = -I_0 \cdot e^{-t/\tau} \) <br>
+                    <small>(سالب لأن جهة التفريغ عكس الشحن)</small>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>التوتر \( u_R(t) \)</strong></td>
+                <td class="col-charge" dir="ltr">
+                    \( RC \frac{du_R}{dt} + u_R = 0 \) <br>
+                    <strong>الحل:</strong> \( u_R(t) = E \cdot e^{-t/\tau} \)
+                </td>
+                <td class="col-discharge" dir="ltr">
+                    \( RC \frac{du_R}{dt} + u_R = 0 \) <br>
+                    <strong>الحل:</strong> \( u_R(t) = -E \cdot e^{-t/\tau} \)
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section-title">
+        <div class="num-badge">4</div>
+        <h2>ثابت الزمن \( \tau \) وأزمنة النصف</h2>
+    </div>
+    <div class="content-box">
+        <ul>
+            <li><strong>التعريف:</strong> \( \tau = R \cdot C \) هو الزمن المميز للدارة، يحدد سرعة استجابة الدارة (كلما كبر، زادت مدة الشحن/التفريغ).</li>
+            <li><strong>تحديده بيانياً:</strong> فاصلة نقطة تقاطع المماس عند المبدأ (\(t=0\)) مع المقارب النهائي، أو هو الزمن الموافق لبلوغ \(u_C\) نسبة 63% من قيمته العظمى في الشحن، و 37% في التفريغ.</li>
+            <li><strong>التحليل البعدي (للحفظ):</strong>
+                <div class="math-box">
+                    \( [C] = \frac{[Q]}{[U]} = \frac{[I][T]}{[U]} \) ، و \( [R] = \frac{[U]}{[I]} \) <br>
+                    \( [\tau] = [R] \times [C] = \frac{[U]}{[I]} \times \frac{[I][T]}{[U]} = [T] \) (متجانس مع الزمن، وحدته الثانية s).
+                </div>
+            </li>
+            <li><strong>زمن نصف الشحن (\(t_{1/2}\)):</strong> الزمن اللازم لبلوغ التوتر (أو الشحنة) نصف قيمته الأعظمية. علاقته: \( t_{1/2} = \tau \ln 2 \).</li>
+        </ul>
+    </div>
+
+    <div class="section-title">
+        <div class="num-badge">5</div>
+        <h2>الطاقة المخزنة (\( E_c \)) والبراهين الرياضية المعقدة</h2>
+    </div>
+    <div class="content-box">
+        <p>الطاقة المخزنة تُعطى بالعلاقة: \( E_c(t) = \frac{1}{2} C [u_c(t)]^2 \). الطاقة الأعظمية في النظام الدائم: \( E_{c\_max} = \frac{1}{2} C E^2 \).</p>
+
+        <h3>1. إثبات زمن نصف الطاقة العظمى في الشحن (\( E_c(t_{1/2}) = E_{c\_max} / 2 \)):</h3>
+        <div class="math-box" style="text-align: right; direction: rtl;">
+            لدينا: \( E_c(t) = E_{c\_max} (1 - e^{-t/\tau})^2 \) <br>
+            نعوض: \( \frac{1}{2} E_{c\_max} = E_{c\_max} (1 - e^{-t_{1/2}/\tau})^2 \) <br>
+            بالجذر: \( \frac{1}{\sqrt{2}} = 1 - e^{-t_{1/2}/\tau} \implies e^{-t_{1/2}/\tau} = \frac{\sqrt{2} - 1}{\sqrt{2}} \) <br>
+            بقلب الكسر: \( e^{t_{1/2}/\tau} = \frac{\sqrt{2}}{\sqrt{2} - 1} \) <br>
+            نضرب في المرافق \( (\sqrt{2} + 1) \): \( e^{t_{1/2}/\tau} = 2 + \sqrt{2} \) <br>
+            بإدخال \( \ln \): <strong>\( t_{1/2} = \tau \ln(2 + \sqrt{2}) \)</strong>
+        </div>
+
+        <h3>2. إثبات زمن نصف الطاقة في التفريغ:</h3>
+        <div class="math-box" style="text-align: right; direction: rtl;">
+            لدينا: \( E_c(t) = E_{c\_max} (e^{-t/\tau})^2 = E_{c\_max} e^{-2t/\tau} \) <br>
+            نعوض: \( \frac{1}{2} E_{c\_max} = E_{c\_max} e^{-2t_{1/2}/\tau} \implies \frac{1}{2} = e^{-2t_{1/2}/\tau} \) <br>
+            بإدخال \( \ln \): \( -\ln 2 = - \frac{2 t_{1/2}}{\tau} \) <br>
+            ومنه: <strong>\( t_{1/2} = \frac{\tau}{2} \ln 2 \)</strong>
+        </div>
+
+        <h3>3. إثبات أن مماس طاقة التفريغ عند \( t=0 \) يقطع محور الفواصل في \( t = \tau/2 \):</h3>
+        <div class="math-box" style="text-align: right; direction: rtl;">
+            معادلة المماس: \( y = f'(0)t + f(0) \). مشتقة الطاقة: \( \frac{dE_c}{dt} = - \frac{2}{\tau} E_{c\_max} e^{-2t/\tau} \). <br>
+            إذن الميل \( f'(0) = - \frac{2}{\tau} E_{c\_max} \)، والنقطة الابتدائية \( f(0) = E_{c\_max} \). <br>
+            المعادلة: \( y = - \frac{2}{\tau} E_{c\_max} t + E_{c\_max} \). <br>
+            نضع \( y = 0 \) لإيجاد التقاطع: \( \frac{2}{\tau} E_{c\_max} t = E_{c\_max} \implies \frac{2}{\tau} t = 1 \implies \mathbf{t = \frac{\tau}{2}} \).
+        </div>
+    </div>
+
+    <div class="section-title">
+        <div class="num-badge">6</div>
+        <h2>أسئلة نظرية متكررة (الخلاصة) ومولد التيار الثابت</h2>
+    </div>
+    <div class="content-box">
+        <div class="q-and-a">
+            <h4>س: كيف تتصرف المكثفة عند اللحظة t=0 وفي النظام الدائم؟</h4>
+            <p><strong>ج:</strong> عند \(t=0\) (فارغة) تتصرف كـ <strong>سلك ناقل</strong> (التيار أعظمي والتوتر معدوم). في النظام الدائم (مشحونة كلياً) تتصرف كـ <strong>قاطعة مفتوحة</strong> (تمنع مرور التيار المستمر).</p>
+        </div>
+
+        <div class="q-and-a">
+            <h4>س: ما هو دور المكثفة في الدارة؟</h4>
+            <p><strong>ج:</strong> تخزين الطاقة الكهربائية (عند الشحن) وإرجاعها للدارة (عند التفريغ).</p>
+        </div>
+
+        <div class="q-and-a">
+            <h4>س: ما الفرق بين استخدام "مولد توتر ثابت" و "مولد تيار ثابت"؟</h4>
+            <p><strong>ج:</strong> <br>
+            - <strong>مولد التوتر الثابت (E):</strong> يعطي توتراً ثابتاً وتياراً متغيراً. الحلول تكون دوال أُسية.<br>
+            - <strong>مولد التيار الثابت (\(I_0\)):</strong> يعطي تياراً ثابتاً وتوتراً متغيراً. <strong>الحلول تكون خطية (مستقيمات):</strong> الشحنة \( q = I_0 \cdot t \) والتوتر \( u_C = (\frac{I_0}{C}) \cdot t \). (يستعمل بكثرة لحساب السعة C من ميل المستقيم).</p>
+        </div>
+    </div>
+
+    <button class="btn-print" onclick="window.print()">🖨️ طباعة دليل الـ RC</button>
+</div>
+
+</body>
+</html>
